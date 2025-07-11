@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amiri+Quran&display=swap" rel="stylesheet">
+    <title>Happy BirthDay's Mama</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="merrywrap" class="merrywrap">
+        <div class="giftbox">
+            <div class="cover">
+                <div></div>
+            </div>
+            <div class="box"></div>
+        </div>
+        <div class="icons">
+            <div class="row">
+                <span>H</span>
+                <span>A</span>
+                <span>P</span>
+                <span>P</span>
+                <span>Y</span>
+            </div>
+            <div class="row">
+                <span>B</span>
+                <span>I</span>
+                <span>R</span>
+                <span>T</span>
+                <span>H</span>
+                <span>D</span>
+                <span>A</span>
+                <span>Y</span>
+            </div>
+            <div class="row">
+                <span>K</span>
+                <span>E</span>
+                <span>S</span>
+                <span>H</span>
+                <span>O</span>
+                <span>O</span>
+            </div>
+            <div class="row">
+                <span>كل سنة و انت طيبة يا ماما</span>
+            </div>
+            <div class="row">
+                <span>و عقبال مليون سنة فى صحة و سعادة</span>
+            </div>
+            <div class="row">
+                <span>و يخليكى لينا يارب</span>
+            </div>
+            <div class="row">
+                <span class="last-span" style="color: red;">❤❤</span>
+            </div>
+        </div>
+        <button id="myButton" onclick="goToPage()" style="display: none;">دوسى نكمل</button>
+    </div>
+    <script>
+        // Function to navigate to the next page
+        function goToPage() {
+            window.location.href = "second.html";
+        }
+
+        // Wait for the last span's animation to complete
+        const lastSpan = document.querySelector(".last-span");
+        lastSpan.addEventListener("transitionend", () => {
+            document.getElementById("myButton").style.display = "block";
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

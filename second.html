@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amiri+Quran&display=swap" rel="stylesheet">	  
+    <title>Happy BirthDay's Keshoo</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleslide.css" />
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="stylegal.css">
+
+</head>
+<body>
+<section class="main swiper mySwiper">
+        <div id="helinecontainer">
+          <div id="sine">فيديوهات</div>
+      </div>
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+            <video src="./images/5.mp4" muted autoplay loop class="video"></video>
+            </div>
+            <div class="slide swiper-slide">
+              <video src="./images/55.mp4" muted autoplay loop class="video"></video>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+<section class="section4">
+    <div id="helinecontainer">
+        <div id="sine">ماما حبيبتى ❤</div>
+    </div><br>
+    <div class="gallery">
+        <img src="./images/1.jpg" alt="a lovely kiss in the night">
+        <img src="./images/11.jpg" alt="a woman inside a car">
+        <img src="./images/111.jpg" alt="a baby">
+        <img src="./images/1111.jpg" alt="a girl in the forest">
+    </div><br><br><br>
+    <div class="gallery">
+        <img src="./images/2.jpg" alt="a lovely kiss in the night">
+        <img src="./images/22.jpg" alt="a woman inside a car">
+        <img src="./images/222.jpg" alt="a baby">
+        <img src="./images/22222.jpg" alt="a girl in the forest">
+        <img src="./images/2222.jpg" alt="a girl in the forest">
+    </div>
+</section><br><br><hr><br>
+  <div id="helinecontainer">
+      <div id="sine">دايما معاناو يخليكى لينا ❤❤</div>
+  </div><br>
+  <section class="section3">
+
+	<div id="gallery">
+		<figure>
+			<img src="images/00.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src="images/01.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src="images/02.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src="images/03.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src="images/04.jpg" alt="Cimg" >
+		</figure>
+		<figure>
+			<img src="images/05.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src='images/06.jpg' alt='img' >
+		</figure>
+		<figure>
+			<img src="images/07.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src="images/08.jpg" alt="img" >
+		</figure>
+		<figure>
+			<img src="images/09.jpg" alt="img">
+		</figure>
+		<figure>
+			<img src="images/010.jpg" alt="img">
+		</figure>
+    <figure>
+			<img src="images/011.jpg" alt="img">
+		</figure>
+    <figure>
+			<img src="images/012.jpg" alt="img">
+		</figure>
+    <figure>
+			<img src="images/013.jpg" alt="img">
+		</figure>
+    <figure>
+			<img src="images/014.jpg" alt="img">
+		</figure>
+    <figure>
+			<img src="images/015.jpg" alt="img">
+		</figure>    
+    <figure>
+			<img src="images/016.jpg" alt="img">
+		</figure>
+        <figure>
+			<img src="images/017.jpg" alt="img">
+		</figure>
+        <figure>
+			<img src="images/018.jpg" alt="img">
+		</figure>
+        <figure>
+			<img src="images/019.jpg" alt="img">
+		</figure>
+        <figure>
+			<img src="images/020.jpg" alt="img">
+		</figure>
+	</div>
+</section>
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+    <script>
+        "use strict";
+        (function () {
+          window.onload = () => {
+            const obj = document.querySelector("#gallery");
+            const time = 10000;
+            function animStart() {
+              if (obj.classList.contains("active") == false) {
+                obj.classList.add("active");
+                setTimeout(() => {
+                  animEnd();
+                }, time);
+              }
+            }
+            function animEnd() {
+              obj.classList.remove("active");
+              obj.offsetWidth;
+            }
+            document.addEventListener("scroll", function () {
+              // scroll or scrollend
+              animStart();
+            });
+            window.addEventListener("resize", animStart);
+            animStart();
+          };
+        })();
+        </script>
+        <script>
+          // Get the specific video element
+          const soundVideo = document.getElementById("soundVideo");
+        
+          // Add a click event listener to the video
+          soundVideo.addEventListener("click", function () {
+            if (soundVideo.muted) {
+              soundVideo.muted = false; // Unmute the video
+              soundVideo.play(); // Play the video (in case it was paused)
+            } else {
+              soundVideo.muted = true; // Mute the video if clicked again
+            }
+          });
+
+          
+          document.addEventListener("DOMContentLoaded", function () {
+    document.body.style.overflowY = "auto"; // تأكيد السماح بالتمرير
+});
+
+        </script>
+</body>
+</html>
